@@ -46,3 +46,6 @@ gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use this ruby version
+ruby "2.1.1"
