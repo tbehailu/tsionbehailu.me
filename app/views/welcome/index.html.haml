@@ -1,0 +1,64 @@
+.page-header.text-center
+	%h3{:style => "float: center;"} 
+
+%h3.one 
+
+-# HEADER 
+%section#header
+	.row
+		.twelve.columns.centered
+			%font{:size=>"11"}
+				%center
+					%i TSION BEHAILU
+
+
+-# CONTAINER
+.container#container
+	.cbp-so-scroller
+	-# HERE IS THE DIV FOR SCROLLING EFFECT
+
+
+	-# SECTION THUMBS 
+	%section.cbp-so-section.work1
+		.row
+			.twelve.columns.centered
+				.hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b
+					%ul.three_up.tiles.centered.hi-icon-effect-9.hi-icon-effect-9b
+						%li
+							.clear
+							%a{:class=>"butt", :href=>"/Behailu_Tsion_Resume.pdf", :title=>"Resume"}
+								%h4 Resume
+						%li
+							.clear
+							%a{:class=>"butt", :href => "http://github.com/tbehailu", :title=> "Github"}
+								%h4 Github
+						%li
+							.clear
+								%a{:class => "butt", :href =>"http://linkedin.com/in/tbehailu", :title=>"LinkedIn"}
+									%h4 LinkedIn
+
+	-# FORM SECTION 
+
+	%section#signup
+		.row.centered
+			.seven.columns.centered
+				.five.columns.centered
+					%button{:name=>"send", :type=>"submit", :class=>"button2", :onclick => "mailto:tsionbehailu@gmail.com"} Email Me
+
+-# USED FOR THE FIXED EFFECT : DON'T REMOVE
+#footerSpacer 
+
+
+-# FOOTER SECTION 
+
+%section#footer
+	.row
+		-# Footer Navigation
+		.five.columns.pull_right
+			%ul#navfirst
+				%li
+					%a{:href=>"mailto:tsionbehailu@gmail.com"} Contact
+				%li
+					%a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
+				%li 
+					%a{:href=>"#"} About
