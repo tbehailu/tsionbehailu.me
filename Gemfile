@@ -49,3 +49,6 @@ gem 'capistrano', group: :development
 
 # Use this ruby version
 ruby "2.1.1"
+
+# Use to enable features such as static asset serving and logging on Heroku
+gem 'rails_12factor', group: :production
