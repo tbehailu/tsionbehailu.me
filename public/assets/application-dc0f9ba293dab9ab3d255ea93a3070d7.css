@@ -8,11 +8,12 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
 
 /* FONT FACE */
+
 
 @font-face {
     font-family: 'latoregular';
@@ -670,7 +671,7 @@ html, body { height: 100%; min-height: 100%;  }
 .text-right { text-align: right; }
 
 /* LE GRID +++ A Responsive Grid -- Gumby defaults to a standard 960 grid, but you can change it to whatever you'd like. */
-.container { padding: 0px;}
+.container { padding: 0px $gutter-in-px;}
 .row { width: 100%; max-width: 940px; min-width: 320px; margin: 0 auto;  }
 @media only screen and (max-width: 960px) { .row { padding: 0 20px; } }
 .row .row { min-width: 0px; }
