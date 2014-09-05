@@ -8,9 +8,10 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
 
 body { 
 font:75%  Arial, Helvetica, sans-serif;
@@ -215,3 +216,6 @@ font-weight:bold;
 border-bottom:1px dotted #900;
 background:transparent;
 }
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
