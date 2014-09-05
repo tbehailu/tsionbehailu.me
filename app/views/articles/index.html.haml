@@ -1,148 +1,71 @@
-/ .page-header.text-center
-/   %h1{:style => "float: center;"}
-/     Articles
- 
-/ %table
-/   %tr
-/     %th Title
-/     %th Text
+#container
+  #intro
+    #pageHeader
+      %h1
+        %span Information and Communication Technologies
+    #preamble
+      %h3
+        %span What is Lorem Ipsum?
+      %p.p1
+        %span Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-/   = @articles.each do |article|
-/     %tr
-/       %td
-/         = article.title
-/       %td
-/         = article.text
-
-%body.home.blog
-  #wrapper
-    .menujohanes
-      %ul.dark_menu
-        %li
-          %a{:class => 'selected', :href => 'data:blog.homepageUrl', :title=>'Home'} Home
-        %li{'data-role' =>'dropdown'}
-          %a{:href=>'#'} Contact
-          %ul
-            %li
-              %a{:href=>'#'} Google+
-            %li
-              %a{:href=>'#'} Blogger
-        %li{'data-role' =>'dropdown'} 
-          %a{:href=>'#'} Categories
-          %ul
-            %li
-              %a{:href=>'#'} Lorem ipsum
-            %li
-              %a{:href=>'#'} Lorem ipsum
-            %li
-              %a{:href=>'#'} Lorem ipsum
-            %li
-              %a{:href=>'#'} Download
-        %li{'data-role' =>'dropdown'} 
-          %a{:href=>'#'} Anime
-          %ul
-            %li 
-              %a{:href=>'#'} Winter
-            %li 
-              %a{:href=>'#'} Summer
-            %li 
-              %a{:href=>'#'} Spring
-        %li{'data-role'=>'dropdown'} 
-          %a{:href=>'#'} Staf
-          %ul
-            %li
-              %a{:href=>'#'}Staf a
-            %li
-              %a{:href=>'#'}Staf b
-            %li
-              %a{:href=>'#'}Staf c
-            %li
-              %a{:href=>'#'}Portfolio
-            %li
-              %a{:href=>'#'}Guestbook
-    %form{:action=>'data:blog.homepageUrl + &quot;search/&quot;', :id=>'search', :method=>'get'}
-      %input{:name =>'q', :placeholder=>'Search', :size=>'40', :type=>'text'}
-    #header
-      %b:section.blognames{:id => 'blognames', :maxwidgets=>'1', :showaddelement=>'no'}
-      %b:widget{:id=>'Header1', :locked=>'true', :title=>'MetroMinimalist (Header)', :type=>'Header'}
-      %b:includable{:id=>'title'}
-        %a{:href=>'data:blog.homepageUrl', :title=>'data:title', :rel=>'home'}
-          %data:title
-      %b:includable{:id=>'description'}
-        %data:description
-      %b:includable{:id=>'main'}
-        %b:if{:cond => 'data:useImage'}
-          %b:if{:cond => 'data:imagePlacement == &quot;BEHIND&quot;'}
-            .titlewrapper{:style=>'background: transparent'}
-              %h1{:class=>'title', :style=>'background: transparent; border-width: 0px'}
-                %b:include{:name=>'title'}
-            %b:include{:name=>'description'}
-          %b:else
-            #header-inner
-              %a{:href=>'data:blog.homepageUrl', :style=>'display: block'}
-                %img{:alt=>'data:title', :height=>'data:height', :id=>'data:widget.instanceId + &quot;_headerimg&quot;', :src=>'data:sourceUrl', :width=>'data:width', :style=>'display: block'}
-              %b:if{:cond=>'data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'}
-                %b:include{:name=>'description'}
-        %b:else
-          %h1{:id=>'blog-title'} 
-            %span 
-              %b:include{:name=>'title'}
-      %h2{:id=>'blog-desc'}
-        %span
-          %b:include{:name=>'description'}
-        / %script{:type=>'text/javascript'}
-
-      .pagepost
-        .title
-          %a{:name=>'data:post.id'}
-          %b:if{:cond=>'data:post.title'}
-            %h2
-              %b:if{:cond=>'data:post.link'}
-                %a{:href=>'data:post.link',:title =>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
-                %data:post.title
-              %b:else
-                %b:if{:cond=>'data:post.url'}
-                  %a{:href=>'data:post.url', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'} 
-                  %data:post.title
-                %b:else
-                  %data:post.title
-          .cover
-            %p
-              %data:post.body
-            %div{:style=>'clear: both'}
-          %b:else
-
-      .jomore
-        .jomorelink
-          %a{:class=>'anes', :href=>'data:post.url'} &#9658;
-      .bgjo
-        %script{:type=>'text/javascript'}
-          createSummaryAndThumb(&quot;summary<data:post.id/>&quot;);
-        %div{:style=>'clear: both;'}
+  #supportingText
+    #explanation
+      %h3
+        %span Where does it come from?
+      %p.p1
+        %span Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      %p.p2
+        %span The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 
 
-    .title
-      %a{:name=>'data:post.id'}
-        %b:if{:cond=>'data:post.title'}
-          %h2
-            %b:if{:cond=>'data:post.link'}
-              %a{:href=>'data:post.link', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
-              %data:post.title
-            %b:else
-              %b:if{:cond=>'data:post.url'}
-                %a{:href=>'data:post.url', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
-                %data:post.title
-              %b:else
-                %data:post.title
+    #participation
+      %h3
+        %span Where can I get some?
+      %p.p1
+        %span There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 
-        .data
-          %b:if{:cond=>'data:top.showAuthor'}
-            %span{:class=>'author'} Posted by : 
-            %data:post.author
-          %b:if{:cond=>'data:post.dateHeader'}
-            %span{:class=>'clock'}
-            %data:post.dateHeader
-      .pagepost
-        .cover
-          %p
-            %data:post.body
+
+    #benefits
+      %h3
+        %span Why do we use it?
+      %p.p1
+        %span It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+    #footer
+      / Copyright 2014 Tsion Behailu
+
+  
+  #linkList
+    #inkList2
+      #lselect
+        %ul
+          %li 
+            %a{:href=>""} Home
+          %li 
+            %a{:href=>""}About Us
+          %li 
+            %a{:href=>""}News
+          %li 
+            %a{:href=>""}Contact
+          %li 
+            %a{:href=>""}Links
+
+      #larchives
+        / %h3.archives
+        /   %span Links
+        %ul
+          %li 
+            %a{:href=>""}Lorem Ipsum
+          %li 
+            %a{:href=>""}Lorem Ipsum
+          %li 
+            %a{:href=>""}Lorem Ipsum
+          %li 
+            %a{:href=>""}Lorem Ipsum
+
+
+/ Designed by DreamTemplate. Please leave link unmodified.
+/ %br
+/ %a{:href=>"http://www.dreamtemplate.com", :title=>"Website Templates", :target=>"_blank"}Website templates
