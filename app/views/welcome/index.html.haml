@@ -1,64 +1,110 @@
-.page-header.text-center
-	%h3{:style => "float: center;"} 
-
-%h3.one 
-
--# HEADER 
-%section#header
-	.row
-		.twelve.columns.centered
-			%font{:size=>"11"}
-				%center
-					%i TSION BEHAILU
+#container
+  #intro
+    #pageHeader
+      %h1
+        %span TSION BEHAILU
+    / #preamble
+    /   %h3
+    /     %span What is Lorem Ipsum?
+    /   %p.p1
+    /     %span Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
--# CONTAINER
-.container#container
-	.cbp-so-scroller
-	-# HERE IS THE DIV FOR SCROLLING EFFECT
+
+    / #benefits
+    /   %h3
+    /     %span Why do we use it?
+    /   %p.p1
+    /     %span It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+  #linkList
+    #inkList2
+      #lselect
+        %ul
+          %li 
+            %a{:href=>"/Behailu_Tsion_Resume.pdf"} Resume
+          %li 
+            %a{:href=>"http://github.com/tbehailu"} Github
+          %li 
+            %a{:href=>"http://linkedin.com/in/tbehailu"} LinkedIn
+          %li 
+            %a{:href=>"mailto:tsionbehailu@gmail.com"} Contact
+          / %li
+          / 	%a{:href=>"/Behailu_Tsion_Resume.pdf"} Resume
+          / %li 
+          /   %a{:href=>"http://github.com/tbehailu"} Github
+          / %li 
+          /   %a{:href=>"http://linkedin.com/in/tbehailu"} LinkedIn
+      
+      #larchives
+        %ul
+          %li 
+            %a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
+          %li 
+            %a{:href=>"/articles"} IEOR Blog
 
 
-	-# SECTION THUMBS 
-	%section.cbp-so-section.work1
-		.row
-			.twelve.columns.centered
-				.hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b
-					%ul.three_up.tiles.centered.hi-icon-effect-9.hi-icon-effect-9b
-						%li
-							.clear
-							%a{:class=>"butt", :href=>"/Behailu_Tsion_Resume.pdf", :title=>"Resume"}
-								%h4 Resume
-						%li
-							.clear
-							%a{:class=>"butt", :href => "http://github.com/tbehailu", :title=> "Github"}
-								%h4 Github
-						%li
-							.clear
-								%a{:class => "butt", :href =>"http://linkedin.com/in/tbehailu", :title=>"LinkedIn"}
-									%h4 LinkedIn
+/ .page-header.text-center
+/ 	%h3{:style => "float: center;"} 
 
-	-# FORM SECTION 
+/ %h3.one 
 
-	%section#signup
-		.row.centered
-			.seven.columns.centered
-				.five.columns.centered
-					%button{:name=>"send", :type=>"submit", :class=>"button2", :onclick => "mailto:tsionbehailu@gmail.com"} Email Me
-
--# USED FOR THE FIXED EFFECT : DON'T REMOVE
-#footerSpacer 
+/ -# HEADER 
+/ %section#header
+/ 	.row
+/ 		.twelve.columns.centered
+/ 			%font{:size=>"11"}
+/ 				%center
+/ 					%i TSION BEHAILU
 
 
--# FOOTER SECTION 
+/ -# CONTAINER
+/ .container#container
+/ 	.cbp-so-scroller
+/ 	-# HERE IS THE DIV FOR SCROLLING EFFECT
 
-%section#footer
-	.row
-		-# Footer Navigation
-		.five.columns.pull_right
-			%ul#navfirst
-				%li
-					%a{:href=>"mailto:tsionbehailu@gmail.com"} Contact
-				%li
-					%a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
-				%li 
-					%a{:href=>"/articles"} Blog
+
+/ 	-# SECTION THUMBS 
+/ 	%section.cbp-so-section.work1
+/ 		.row
+/ 			.twelve.columns.centered
+/ 				.hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b
+/ 					%ul.three_up.tiles.centered.hi-icon-effect-9.hi-icon-effect-9b
+/ 						%li
+/ 							.clear
+/ 							%a{:class=>"butt", :href=>"/Behailu_Tsion_Resume.pdf", :title=>"Resume"}
+/ 								%h4 Resume
+/ 						%li
+/ 							.clear
+/ 							%a{:class=>"butt", :href => "http://github.com/tbehailu", :title=> "Github"}
+/ 								%h4 Github
+/ 						%li
+/ 							.clear
+/ 								%a{:class => "butt", :href =>"http://linkedin.com/in/tbehailu", :title=>"LinkedIn"}
+/ 									%h4 LinkedIn
+
+/ 	-# FORM SECTION 
+
+/ 	%section#signup
+/ 		.row.centered
+/ 			.seven.columns.centered
+/ 				.five.columns.centered
+/ 					%button{:name=>"send", :type=>"submit", :class=>"button2", :onclick => "mailto:tsionbehailu@gmail.com"} Email Me
+
+/ -# USED FOR THE FIXED EFFECT : DON'T REMOVE
+/ #footerSpacer 
+
+
+/ -# FOOTER SECTION 
+
+/ %section#footer
+/ 	.row
+/ 		-# Footer Navigation
+/ 		.five.columns.pull_right
+/ 			%ul#navfirst
+/ 				%li
+/ 					%a{:href=>"mailto:tsionbehailu@gmail.com"} Contact
+/ 				%li
+/ 					%a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
+/ 				%li 
+/ 					%a{:href=>"/articles"} Blog
