@@ -1,0 +1,148 @@
+/ .page-header.text-center
+/   %h1{:style => "float: center;"}
+/     Articles
+ 
+/ %table
+/   %tr
+/     %th Title
+/     %th Text
+
+/   = @articles.each do |article|
+/     %tr
+/       %td
+/         = article.title
+/       %td
+/         = article.text
+
+%body.home.blog
+  #wrapper
+    .menujohanes
+      %ul.dark_menu
+        %li
+          %a{:class => 'selected', :href => 'data:blog.homepageUrl', :title=>'Home'} Home
+        %li{'data-role' =>'dropdown'}
+          %a{:href=>'#'} Contact
+          %ul
+            %li
+              %a{:href=>'#'} Google+
+            %li
+              %a{:href=>'#'} Blogger
+        %li{'data-role' =>'dropdown'} 
+          %a{:href=>'#'} Categories
+          %ul
+            %li
+              %a{:href=>'#'} Lorem ipsum
+            %li
+              %a{:href=>'#'} Lorem ipsum
+            %li
+              %a{:href=>'#'} Lorem ipsum
+            %li
+              %a{:href=>'#'} Download
+        %li{'data-role' =>'dropdown'} 
+          %a{:href=>'#'} Anime
+          %ul
+            %li 
+              %a{:href=>'#'} Winter
+            %li 
+              %a{:href=>'#'} Summer
+            %li 
+              %a{:href=>'#'} Spring
+        %li{'data-role'=>'dropdown'} 
+          %a{:href=>'#'} Staf
+          %ul
+            %li
+              %a{:href=>'#'}Staf a
+            %li
+              %a{:href=>'#'}Staf b
+            %li
+              %a{:href=>'#'}Staf c
+            %li
+              %a{:href=>'#'}Portfolio
+            %li
+              %a{:href=>'#'}Guestbook
+    %form{:action=>'data:blog.homepageUrl + &quot;search/&quot;', :id=>'search', :method=>'get'}
+      %input{:name =>'q', :placeholder=>'Search', :size=>'40', :type=>'text'}
+    #header
+      %b:section.blognames{:id => 'blognames', :maxwidgets=>'1', :showaddelement=>'no'}
+      %b:widget{:id=>'Header1', :locked=>'true', :title=>'MetroMinimalist (Header)', :type=>'Header'}
+      %b:includable{:id=>'title'}
+        %a{:href=>'data:blog.homepageUrl', :title=>'data:title', :rel=>'home'}
+          %data:title
+      %b:includable{:id=>'description'}
+        %data:description
+      %b:includable{:id=>'main'}
+        %b:if{:cond => 'data:useImage'}
+          %b:if{:cond => 'data:imagePlacement == &quot;BEHIND&quot;'}
+            .titlewrapper{:style=>'background: transparent'}
+              %h1{:class=>'title', :style=>'background: transparent; border-width: 0px'}
+                %b:include{:name=>'title'}
+            %b:include{:name=>'description'}
+          %b:else
+            #header-inner
+              %a{:href=>'data:blog.homepageUrl', :style=>'display: block'}
+                %img{:alt=>'data:title', :height=>'data:height', :id=>'data:widget.instanceId + &quot;_headerimg&quot;', :src=>'data:sourceUrl', :width=>'data:width', :style=>'display: block'}
+              %b:if{:cond=>'data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'}
+                %b:include{:name=>'description'}
+        %b:else
+          %h1{:id=>'blog-title'} 
+            %span 
+              %b:include{:name=>'title'}
+      %h2{:id=>'blog-desc'}
+        %span
+          %b:include{:name=>'description'}
+        / %script{:type=>'text/javascript'}
+
+      .pagepost
+        .title
+          %a{:name=>'data:post.id'}
+          %b:if{:cond=>'data:post.title'}
+            %h2
+              %b:if{:cond=>'data:post.link'}
+                %a{:href=>'data:post.link',:title =>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
+                %data:post.title
+              %b:else
+                %b:if{:cond=>'data:post.url'}
+                  %a{:href=>'data:post.url', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'} 
+                  %data:post.title
+                %b:else
+                  %data:post.title
+          .cover
+            %p
+              %data:post.body
+            %div{:style=>'clear: both'}
+          %b:else
+
+      .jomore
+        .jomorelink
+          %a{:class=>'anes', :href=>'data:post.url'} &#9658;
+      .bgjo
+        %script{:type=>'text/javascript'}
+          createSummaryAndThumb(&quot;summary<data:post.id/>&quot;);
+        %div{:style=>'clear: both;'}
+
+
+    .title
+      %a{:name=>'data:post.id'}
+        %b:if{:cond=>'data:post.title'}
+          %h2
+            %b:if{:cond=>'data:post.link'}
+              %a{:href=>'data:post.link', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
+              %data:post.title
+            %b:else
+              %b:if{:cond=>'data:post.url'}
+                %a{:href=>'data:post.url', :title=>'&quot;Permanent Link to &quot; + data:post.title', :rel=>'bookmark'}
+                %data:post.title
+              %b:else
+                %data:post.title
+
+        .data
+          %b:if{:cond=>'data:top.showAuthor'}
+            %span{:class=>'author'} Posted by : 
+            %data:post.author
+          %b:if{:cond=>'data:post.dateHeader'}
+            %span{:class=>'clock'}
+            %data:post.dateHeader
+      .pagepost
+        .cover
+          %p
+            %data:post.body
