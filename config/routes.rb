@@ -1,4 +1,5 @@
 Website::Application.routes.draw do
+  resources :research
   resources :articles
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
