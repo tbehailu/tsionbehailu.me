@@ -1,4 +1,5 @@
 Website::Application.routes.draw do
+  resources :projects
   resources :research
   resources :articles
   get "welcome/index"

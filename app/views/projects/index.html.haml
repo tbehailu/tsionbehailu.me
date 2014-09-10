@@ -1,0 +1,83 @@
+#container
+  #intro
+    #pageHeader
+      %h1
+        %span Projects
+    
+    #preamble
+      %h3
+        %span Pacman Search & Multi-Agent Pacman
+        %br February 2014
+      %ul 
+        %li Built general search algorithms and applied them to pacman agent to find paths through a maze. Designed additional agents for game, implementing both minimax and expectimax search.
+
+      %h3
+        %span Processor Design
+        %br November 2013
+        %br https://github.com/tbehailu/Processor.git
+      %ul 
+        %li Used Logisim to create a 16-bit two-cycle processor. Designed the processor’s register file to manage the four 16-bit registers in the Instruction Set Architecture (ISA) and the ALU to do a total of ten operations. Built the Data Memory using a built-in Logism RAM module. Wrote two MIPS functions for additional testing of the final CPU design. advisor, students will identify appropriate venues to publish their work
+
+      %h3
+        %span BestRegards.co: Handwritten Thank You Cards Generator
+        %br October 2013 - Present
+        %br www.bestregards.co
+      %ul 
+        %li Co-founded a web service that automates handwritten thank you cards using Ruby on Rails. Implemented a custom-built calculator in JQuery that informs users how much time they would save by using BestRegards from the number of attendees at their wedding. Built an ecommerce platform and integrated Stripe’s API to accept payments.
+
+      %h3
+        %span MIPS Instruction Set Emulator 
+        %br October 2013
+        %br https://github.com/tbehailu/MIPS-Simulator.git
+      %ul 
+        %li Created an instruction interpreter for a subset of MIPS code. Provided the machinery to decode and execute a couple dozen MIPS instructions.
+
+      %h3
+        %span Co-occurrence in a large dataset
+        %br September 2013
+        %br https://github.com/tbehailu/Co-occurrence-in-a-large-dataset
+        %br Goal: Given a target word, identify which words in a body of text are most closely related to it by ranking each unique word in the corpus by its co-occurrence rate, determined using a given co-occurrence rate algorithm, with the target word.
+      %ul 
+        %li Implemented MapReduce jobs in Java, which calculate co-occurrence of a target word in a large dataset.
+        %li Ran MapReduce on several datasets stored on Amazon’s Simple Storage Service (S3). Used Amazon’s EC2 service, which rents virtual machines by the hour, by starting up a Hadoop cluster.
+
+      %h3
+        %span Bird Bounce: An iOS Mobile Game
+        %br October 2013 - Present
+        %br https://tsion_behailu@bitbucket.org/tsion_behailu/bounce.git
+      %ul 
+        %li Developed an iOS mobile game with a partner on Kobold2D, a 2D game framework. All graphics were done using Adobe Illustrator.
+
+      %h3
+        %span The Beauty of Knotted Sculptures
+        %br August 2013 - December 2013
+        %br https://github.com/tbehailu/knots.git
+        %br Mentor: Prof. Carlo Sequin, Electrical Engineering & Computer Science Department
+      %ul 
+        %li Analyzed and deformed selected knots from knot table into 2D diagrams in order to find symmetry and create 3D model with the use of AutoCAD as a research apprentice. 
+
+  #footer
+    / Copyright 2014 Tsion Behailu
+
+  
+  #linkList
+    #inkList2
+      #lselect
+        %ul
+          %li 
+            %a{:href=>"/"} Home
+          %li
+            = link_to "Resume", "/Behailu_Tsion_Resume.pdf"
+          %li 
+            %a{:href=>"http://github.com/tbehailu"} Github
+          %li 
+            %a{:href=>"http://linkedin.com/in/tbehailu"} LinkedIn
+
+      #larchives
+        %ul
+          %li 
+            %a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
+          %li 
+            %a{:href=>"/articles"} IEOR Blog
+          %li 
+            %a{:href=>"/research"} Research Blog
