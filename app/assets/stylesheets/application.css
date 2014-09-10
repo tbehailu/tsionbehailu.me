@@ -123,34 +123,37 @@ margin:0 0 40px 0;
 #larchives{
 }
 #linkList ul{
-margin:0;
-padding:0;
-list-style:none;
+	margin:0;
+	padding:0;
+	list-style:none;
 }
 #linkList li{
-font-size:0.8em;
-display:block;
-margin:0;
-padding: 0 0 7px 0;
-border-bottom:1px solid #F9F7F6;
+	font-size:0.8em;
+	display:block;
+	margin:0;
+	padding: 0 0 7px 0;
+	border-bottom:1px solid #F9F7F6;
 }
+
 #linkList li a{ 
-display:block;
-padding:4px 10px 4px 5px;
-margin:0 0 5px 0;
-border:0;
-text-transform:uppercase;
-font-weight:bold;
-text-decoration:none;
-color:#333333;
+	display:block;
+	padding:4px 10px 4px 5px;
+	margin:0 0 5px 0;
+	border:0;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+	color:#333333;
 }
+
 #lselect li a,
 #lfavorites li a{
-background:transparent url(visited.png) no-repeat  -100px;
+	background:transparent url(visited.png) no-repeat  -100px;
 }
+
 #lselect li a:visited,
 #lfavorites li a:visited{
-background-position:0 50% ;
+	background-position:0 50% ;
 }
 
 #linkList li a:hover,
