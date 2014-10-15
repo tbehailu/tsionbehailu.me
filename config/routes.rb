@@ -1,6 +1,7 @@
 Website::Application.routes.draw do
   resources :projects
   resources :research
+  resources :ieor_blog
   resources :articles
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.

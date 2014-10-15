@@ -16,6 +16,6 @@ class ResearchController < ApplicationController
 
 	private
 	  def research_params
-	    params.require(:article).permit(:title, :text)
+	    params.require(:research_post).permit(:title, :text)
 	  end
 end
