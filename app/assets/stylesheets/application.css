@@ -18,6 +18,7 @@ body {
 	background:#FDFDFD url(back.png) repeat-y top center;
 	margin:0;
 	text-align:center; 
+	line-height: 30px;
 }
 
 
@@ -28,11 +29,14 @@ p{
 	padding:0;
 }
 
-#preamble p,
-#supportingText p{
+#preamble p {
 	background:transparent url(hr.png) no-repeat bottom center;
 	margin:0;
 	padding:1.4em 0 1.4em 0;
+}
+
+#preamble{
+	font-size: 15px;
 }
 
 a{ 
@@ -63,14 +67,19 @@ div[id="container"] a:visited{
 	margin:0 auto; 
 }
 
+
 #intro,
-#preamble,
-#supportingText,
-#quickSummary{
+#preamble{
 	width:750px;
 	float:right;
 	clear:right;
 	margin:20px 0 0 0;
+
+	
+}
+
+#preamble h2{
+	line-height: 30px;
 }
 
 #intro #pageHeader {
@@ -82,6 +91,8 @@ div[id="container"] a:visited{
 	padding:0;
 	text-align: right;
 	color: #363435;
+	line-height: 30px;
+	
 }
 h3{
 	width:750px;
@@ -94,12 +105,7 @@ h3{
 
 #preamble h3{
 }
-#explanation h3{
-}
-#participation h3{
-}
-#benefits h3{
-}
+
 #linkList{
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	margin:0;
