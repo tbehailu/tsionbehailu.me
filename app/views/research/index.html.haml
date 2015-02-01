@@ -47,7 +47,7 @@
 
       %iframe{:src=>"https://docs.google.com/presentation/d/15SuFU3v9bUUDYwrwPw1DTRfvCfBgEVq8PA4QQ0Rd0N4/embed?start=false&loop=false&delayms=3000", :frameborder=>"0", :width=>"500", :height=>"300", :allowfullscreen=>"true", :mozallowfullscreen=>"true", :webkitallowfullscreen=>"true"}
 
-      %h3
+      %h4
         %span Potential products to build as discussed with Prof. Parikh
       %ul 
         %li Gathering information on the current flow of information between farmers
@@ -70,8 +70,8 @@
         %h2
           %span September 24, 2014 - Advisor Meeting notes, potential application ideas
         
-        %h3 Notes
-        
+        %h4 Notes
+      
         %ul
           %li People from Gates and UN
           %li Egronomy and new type of sensors for agriculture
@@ -231,6 +231,71 @@
 
       Aparna and I are currently in the process of designing prototypes rainfall sensor prototypes that will be both cost-efficient and scalable. This prototype will eventually be used by many farmers to record weather metrics. Upon successful completion of a design, we will begin work on the software necessary to perform analysis on the data collected by sensors. We have been researching various parts necessary to build the device that will collect the rainfall information, including microcontroller technology and PCB editting sofware in order to determine the best method for producing a working prototype. 
     
+    #preamble
+      %h2 December 31, 2014 - Model 1 Failed
+      During the winter break, Aparna and I worked on implementing the first version of the prototype with the buoy but found it to be unsuccessful. The following reasons were part of the reason.
+
+      %ul
+        %li Button too small 
+        %li Buoy floating was not precise 
+        %li Measured only one static level of water
+        %li Wire floated in water
+
+      Need to switch, because the precision was not accurate at all. It first never pushed the buttons. Even when the cord was attached - we hit problems with buoy. 
+
+
+    #preamble
+      %h2 January 12 - Model 2: Capacitive Sensing
+
+      %ul
+        %li
+          %a{:href =>"http://en.wikipedia.org/wiki/Capacitive_sensing"} Capacitative Sensing Overview
+        %li
+          Papers and Articles:
+          %a{:href =>"http://www.sciencedirect.com/science/article/pii/S0924424707003123"} Reference 1
+          %a{:href =>"http://www.eetimes.com/document.asp?doc_id=1279770"} Reference 2
+        %li 
+          %a{:href =>"https://www.youtube.com/watch?v=0du-QU1Q0T4"} Video Demo
+        %li
+          Instructions:
+          %a{:href =>"http://www.instructables.com/id/Building-a-Capacitive-Liquid-Sensor/#step4"} Example 1
+          %a{:href =>"http://www.best-microcontroller-projects.com/capacitive-liquid-level-sensor.html"} Example 2
+
+      Advantages
+      %ul
+        %li Water level by level
+        %li Arduino rather than TinyOS means SD card installation is already integrated 
+
+
+    #preamble
+      %h2 January 25 - Ordered supplies for Model 2
+
+      %ul
+        %li 
+          %a{:href =>"http://www.miniinthebox.com/high-quality-solderless-breadboard-with-400-tie-points_p905211.html"} Solderless breadboard
+        %li 
+          %a{:href =>"http://store.arduino.cc/product/A000067"} Arduino Mega
+        %li 
+          %a{:href =>"https://www.sparkfun.com/products/709"} LCD character display
+        %li wire
+        %li 1MΩ resistor
+        %li 
+          %a{:href =>"http://www.bajdi.com/arduino-mega-2560-and-sd-card-modul/"} SD Card Module
+        %li 
+          %a{:href =>"http://blog.oscarliang.net/sd-card-arduino/"} SD Card reader info
+
+    #preamble
+      %h2 January 28, 2015 - Advisor Meeting
+
+      We met with Tapan to update him on our progress and our plans on building the second prototype. 
+
+      We decided on the following timeline:
+
+      %ul
+        %li Week of Jan 25th - Order Supplies, Pick model
+        %li Week of Feb 1st - Follow the Instructable
+        %li Week of Feb 8th - Bugs and SD card data storage?
+        %li Week of Feb 15th - Finish Prototyping hopefully 
 
 
   #footer
