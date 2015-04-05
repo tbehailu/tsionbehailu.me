@@ -10,3 +10,30 @@
     = csrf_meta_tags
   %body
     = yield
+    #linkList
+      #lselect
+        %ul
+          %li
+            %a{:href=>"/"} Home
+          %li
+            %a{:href=>"/Behailu_Tsion_Resume.pdf"} Resume
+          %li 
+            %a{:href=>"http://github.com/tbehailu"} Github
+          %li
+            %a{:href=>"http://linkedin.com/in/tbehailu"} LinkedIn
+          %li
+            %a{:href=>"mailto:tsionbehailu@gmail.com"} Contact
+          
+      #larchives
+        %ul
+          %li 
+            %a{:href=>"http://www.tsion.me/wat-camp-2014/"} WAT Camp
+          %li 
+            %a{:href=>"/ieor_blog"} IEOR Blog
+          %li 
+            %a{:href=>"/research"} Research Blog
+          %li 
+            %a{:href=>"/projects"} Projects
+        
+
+    

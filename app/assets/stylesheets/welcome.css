@@ -207,7 +207,7 @@ h1 {
 
 
 .front-page-header {
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,.2)), url("images/me.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,.2)), url("me.jpg");
   /*background-position: center;*/
   background-repeat:  no-repeat;
   position: fixed;
