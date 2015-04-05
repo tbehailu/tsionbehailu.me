@@ -18,7 +18,7 @@ body {
 	color:#333;
 	background:#FDFDFD url(back.png) repeat-y top center;
 	margin:0;
-	text-align:center; 
+	text-align:left; 
 
 }
 
@@ -78,8 +78,6 @@ div[id="container"] a:visited{
 	float:right;
 	clear:right;
 	margin:20px 0 0 0;
-
-	
 }
 
 #preamble h2{
@@ -98,6 +96,7 @@ div[id="container"] a:visited{
 	line-height: 30px;
 	
 }
+
 h3{
 	width:750px;
 	height:35px;
@@ -114,7 +113,7 @@ h3{
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	margin:0;
 	padding:30px 0 0 0;
-	width:208px;
+	width:175px;
 	text-align:right;
 	float:none;
 	float:none;
@@ -237,3 +236,6 @@ h3{
 	border-bottom:1px dotted #900;
 	background:transparent;
 }
+
+
+
